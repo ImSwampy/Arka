@@ -1,0 +1,7 @@
+#import Console
+
+var age<int> = 56;
+var name<string> = "John";
+var sex<char> = 'M';
+
+console.print("Hello, my name is ${name}, I'm ${age} years old and my sex is ${sex}")
