@@ -1,0 +1,9 @@
+#import Console
+#import Arrays
+
+var my_super_array<Array(int|string)[3]>; //create an array with a length of three and that can hold only int and strings
+my_super_array.push(10);
+my_super_array.push("James");
+my_super_array.push(15);
+
+Console.print(my_super_array)
