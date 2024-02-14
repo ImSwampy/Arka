@@ -1,0 +1,12 @@
+#import Console
+
+func my_function<void>() {
+  Console.print("function was run");
+}
+
+func greet<string>(name<string>) {
+  return "Hey ${name}!";
+}
+
+my_function();
+Console.print(greet());
