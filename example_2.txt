@@ -6,4 +6,11 @@ my_super_array.push(10);
 my_super_array.push("James");
 my_super_array.push(15);
 
-Console.print(my_super_array) //{10, "James", 15}
+Console.print(my_super_array); //{10, "James", 15}
+
+
+var my_super_array2<Array(int|string)[3|auto]> = {10, "James", 15};
+
+Console.print(my_super_array2); //{10, "James", 15}
+
+Console.print(my_super_array == my_super_array2); //{10, "James", 15}
