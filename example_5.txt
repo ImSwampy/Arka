@@ -1,0 +1,8 @@
+#import Console
+#import FileOp
+#define FILENAME test.txt
+
+var myfile<bytes[]> = file.open(FILENAME);
+var content<string> = myfile.readLines();
+
+Console.print(content); //display file content
