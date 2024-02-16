@@ -1,0 +1,6 @@
+#import Console
+
+for (var i<int> = 0; i < 10; i++) {
+	Console.print(i);
+}
+
