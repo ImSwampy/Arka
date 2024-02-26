@@ -1,0 +1,17 @@
+# ninja log v5
+0	697	7306121552294334	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+702	1046	7306121555576223	my_own_programming_language.exe	7e27bcfb4509e0a1
+16	560	7306122955345525	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+563	778	7306122957421236	my_own_programming_language.exe	7e27bcfb4509e0a1
+7	739	7306123189957614	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+740	1321	7306123195730580	my_own_programming_language.exe	7e27bcfb4509e0a1
+5	476	7306123253672383	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+477	740	7306123256122556	my_own_programming_language.exe	7e27bcfb4509e0a1
+19	641	7306661821593825	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+642	790	7306661823016302	my_own_programming_language.exe	7e27bcfb4509e0a1
+5	398	7306663551107544	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+399	526	7306663552201264	my_own_programming_language.exe	7e27bcfb4509e0a1
+5	872	7306663757213989	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+873	1093	7306663759365972	my_own_programming_language.exe	7e27bcfb4509e0a1
+4	298	7306663928573246	CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj	ed93ffae47dc0673
+299	401	7306663929510831	my_own_programming_language.exe	7e27bcfb4509e0a1

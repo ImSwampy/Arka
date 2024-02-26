@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.27)
+project(my_own_programming_language)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(src)
+
+add_executable(my_own_programming_language
+        src/types.cpp)
