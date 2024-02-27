@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(src)
 
 add_executable(my_own_programming_language
-        src/types.cpp)
+        src/Types.h src/Tokenizer.cpp src/Tokenizer.h src/main.cpp)

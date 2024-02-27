@@ -1,4 +1,4 @@
 C:\Users\CLEMENT.LAPORTE\Downloads\cmake-3.27.0-rc2-windows-x86_64\cmake-3.27.0-rc2-windows-x86_64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -G Ninja C:\Users\CLEMENT.LAPORTE\CLionProjects\my-own-programming-language
--- Configuring done (1.7s)
--- Generating done (4.1s)
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
 -- Build files have been written to: C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug

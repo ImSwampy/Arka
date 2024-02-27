@@ -49,8 +49,15 @@ cmake_ninja_workdir = C$:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming
 
 build cmake_object_order_depends_target_my_own_programming_language: phony || CMakeFiles/my_own_programming_language.dir
 
-build CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj: CXX_COMPILER__my_own_programming_language_unscanned_Debug C$:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/src/types.cpp || cmake_object_order_depends_target_my_own_programming_language
-  DEP_FILE = CMakeFiles\my_own_programming_language.dir\src\types.cpp.obj.d
+build CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.obj: CXX_COMPILER__my_own_programming_language_unscanned_Debug C$:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/src/Tokenizer.cpp || cmake_object_order_depends_target_my_own_programming_language
+  DEP_FILE = CMakeFiles\my_own_programming_language.dir\src\Tokenizer.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/src
+  OBJECT_DIR = CMakeFiles\my_own_programming_language.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_own_programming_language.dir\src
+
+build CMakeFiles/my_own_programming_language.dir/src/main.cpp.obj: CXX_COMPILER__my_own_programming_language_unscanned_Debug C$:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/src/main.cpp || cmake_object_order_depends_target_my_own_programming_language
+  DEP_FILE = CMakeFiles\my_own_programming_language.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -IC:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/src
   OBJECT_DIR = CMakeFiles\my_own_programming_language.dir
@@ -64,7 +71,7 @@ build CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable my_own_programming_language.exe
 
-build my_own_programming_language.exe: CXX_EXECUTABLE_LINKER__my_own_programming_language_Debug CMakeFiles/my_own_programming_language.dir/src/types.cpp.obj
+build my_own_programming_language.exe: CXX_EXECUTABLE_LINKER__my_own_programming_language_Debug CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.obj CMakeFiles/my_own_programming_language.dir/src/main.cpp.obj
   DEP_FILE = CMakeFiles\my_own_programming_language.dir\link.d
   FLAGS = -g
   LINK_FLAGS = -Wl,--dependency-file,CMakeFiles\my_own_programming_language.dir\link.d
