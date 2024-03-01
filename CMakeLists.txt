@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.27)
 project(my_own_programming_language)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 23)
 
 include_directories(src)
 

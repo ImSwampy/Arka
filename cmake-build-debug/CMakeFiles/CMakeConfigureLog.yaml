@@ -8,6 +8,16 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Windows - 10.0.19045 - AMD64
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
   -
     kind: "message-v1"
     backtrace:
@@ -61,8 +71,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cr2v39"
-      binary: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cr2v39"
+      source: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t93o0g"
+      binary: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t93o0g"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,10 +81,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cr2v39'
+        Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t93o0g'
         
-        Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_505da
-        [1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_9cff6
+        [1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -82,8 +92,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 11.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505da.dir/'
-         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_505da.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccwaIGn3.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9cff6.dir/'
+         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9cff6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccPGya7c.s
         GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -104,13 +114,13 @@ events:
         	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 23424b72d090e8b977a96775bde79257
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505da.dir/'
-         as -v -o CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccwaIGn3.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9cff6.dir/'
+         as -v -o CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccPGya7c.s
         GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
         COMPILER_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;/mingw/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.'
-        [2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe  -v   -Wl,--dependency-file,CMakeFiles\\cmTC_505da.dir\\link.d CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj -o cmTC_505da.exe -Wl,--out-implib,libcmTC_505da.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.'
+        [2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe  -v   -Wl,--dependency-file,CMakeFiles\\cmTC_9cff6.dir\\link.d CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj -o cmTC_9cff6.exe -Wl,--out-implib,libcmTC_9cff6.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
@@ -121,9 +131,9 @@ events:
         gcc version 11.2.0 (GCC) 
         COMPILER_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;/mingw/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_505da.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_505da.'
-         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_505da.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_505da.dir\\link.d CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_505da.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_505da.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_505da.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9cff6.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9cff6.'
+         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9cff6.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_9cff6.dir\\link.d CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_9cff6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9cff6.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9cff6.'
         
       exitCode: 0
   -
@@ -159,10 +169,10 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cr2v39']
+        ignore line: [Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t93o0g']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_505da]
-        ignore line: [[1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_9cff6]
+        ignore line: [[1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -170,8 +180,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 11.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505da.dir/']
-        ignore line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_505da.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccwaIGn3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9cff6.dir/']
+        ignore line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9cff6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccPGya7c.s]
         ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -192,8 +202,8 @@ events:
         ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 23424b72d090e8b977a96775bde79257]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505da.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccwaIGn3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9cff6.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccPGya7c.s]
         ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
         ignore line: [COMPILER_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/]
@@ -205,8 +215,8 @@ events:
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe  -v   -Wl --dependency-file CMakeFiles\\cmTC_505da.dir\\link.d CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj -o cmTC_505da.exe -Wl --out-implib libcmTC_505da.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe  -v   -Wl --dependency-file CMakeFiles\\cmTC_9cff6.dir\\link.d CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj -o cmTC_9cff6.exe -Wl --out-implib libcmTC_9cff6.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
@@ -225,14 +235,14 @@ events:
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_505da.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_505da.']
-        link line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_505da.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_505da.dir\\link.d CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_505da.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9cff6.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9cff6.']
+        link line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9cff6.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_9cff6.dir\\link.d CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_9cff6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
           arg [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_505da.exe] ==> ignore
+          arg [cmTC_9cff6.exe] ==> ignore
           arg [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> obj [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
           arg [-LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> dir [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0]
@@ -244,10 +254,10 @@ events:
           arg [-LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> dir [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..]
           arg [-L/mingw/lib] ==> dir [/mingw/lib]
           arg [--dependency-file] ==> ignore
-          arg [CMakeFiles\\cmTC_505da.dir\\link.d] ==> ignore
-          arg [CMakeFiles/cmTC_505da.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles\\cmTC_9cff6.dir\\link.d] ==> ignore
+          arg [CMakeFiles/cmTC_9cff6.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_505da.dll.a] ==> ignore
+          arg [libcmTC_9cff6.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -305,8 +315,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5wdh0h"
-      binary: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5wdh0h"
+      source: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ykv712"
+      binary: "C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ykv712"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -315,10 +325,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5wdh0h'
+        Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ykv712'
         
-        Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_f5d5a
-        [1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe   -v -o CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_ee129
+        [1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe   -v -o CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -326,8 +336,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 11.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f5d5a.dir/'
-         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f5d5a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccqm0Jcf.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ee129.dir/'
+         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ee129.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\cc1VILRq.s
         GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -354,13 +364,13 @@ events:
         	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 916242a6eadede3a42d72bc0142b939f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f5d5a.dir/'
-         as -v -o CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccqm0Jcf.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ee129.dir/'
+         as -v -o CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\cc1VILRq.s
         GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
         COMPILER_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;/mingw/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe  -v   -Wl,--dependency-file,CMakeFiles\\cmTC_f5d5a.dir\\link.d CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f5d5a.exe -Wl,--out-implib,libcmTC_f5d5a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe  -v   -Wl,--dependency-file,CMakeFiles\\cmTC_ee129.dir\\link.d CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ee129.exe -Wl,--out-implib,libcmTC_ee129.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
@@ -371,9 +381,9 @@ events:
         gcc version 11.2.0 (GCC) 
         COMPILER_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;/mingw/lib/../lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f5d5a.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f5d5a.'
-         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f5d5a.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_f5d5a.dir\\link.d CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_f5d5a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f5d5a.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f5d5a.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee129.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ee129.'
+         C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ee129.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_ee129.dir\\link.d CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_ee129.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee129.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ee129.'
         
       exitCode: 0
   -
@@ -415,10 +425,10 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5wdh0h']
+        ignore line: [Change Dir: 'C:/Users/CLEMENT.LAPORTE/CLionProjects/my-own-programming-language/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ykv712']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_f5d5a]
-        ignore line: [[1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe   -v -o CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -v cmTC_ee129]
+        ignore line: [[1/2] C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe   -v -o CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -426,8 +436,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 11.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f5d5a.dir/']
-        ignore line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f5d5a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccqm0Jcf.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ee129.dir/']
+        ignore line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/Users/CLEMENT.LAPORTE/Downloads/cmake-3.27.0-rc2-windows-x86_64/cmake-3.27.0-rc2-windows-x86_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ee129.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\cc1VILRq.s]
         ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -454,8 +464,8 @@ events:
         ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 916242a6eadede3a42d72bc0142b939f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f5d5a.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\ccqm0Jcf.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ee129.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\CLEMEN~1.LAP\\AppData\\Local\\Temp\\cc1VILRq.s]
         ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
         ignore line: [COMPILER_PATH=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/]
@@ -467,8 +477,8 @@ events:
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe  -v   -Wl --dependency-file CMakeFiles\\cmTC_f5d5a.dir\\link.d CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f5d5a.exe -Wl --out-implib libcmTC_f5d5a.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe  -v   -Wl --dependency-file CMakeFiles\\cmTC_ee129.dir\\link.d CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ee129.exe -Wl --out-implib libcmTC_ee129.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Users\\CLEMENT.LAPORTE\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\213.5744.254\\bin\\mingw\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
@@ -487,14 +497,14 @@ events:
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f5d5a.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f5d5a.']
-        link line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f5d5a.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_f5d5a.dir\\link.d CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_f5d5a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee129.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ee129.']
+        link line: [ C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ee129.exe C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -L/mingw/lib/../lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -L/mingw/lib --dependency-file CMakeFiles\\cmTC_ee129.dir\\link.d CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_ee129.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
           arg [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_f5d5a.exe] ==> ignore
+          arg [cmTC_ee129.exe] ==> ignore
           arg [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> obj [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
           arg [-LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> dir [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0]
@@ -506,10 +516,10 @@ events:
           arg [-LC:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> dir [C:/Users/CLEMENT.LAPORTE/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..]
           arg [-L/mingw/lib] ==> dir [/mingw/lib]
           arg [--dependency-file] ==> ignore
-          arg [CMakeFiles\\cmTC_f5d5a.dir\\link.d] ==> ignore
-          arg [CMakeFiles/cmTC_f5d5a.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles\\cmTC_ee129.dir\\link.d] ==> ignore
+          arg [CMakeFiles/cmTC_ee129.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_f5d5a.dll.a] ==> ignore
+          arg [libcmTC_ee129.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore

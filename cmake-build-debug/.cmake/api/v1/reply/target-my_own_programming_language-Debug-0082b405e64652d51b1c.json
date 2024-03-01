@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14"
+					"fragment" : "-g -std=gnu++23"
 				}
 			],
 			"includes" : 
@@ -62,7 +62,7 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "23"
 			},
 			"sourceIndexes" : 
 			[

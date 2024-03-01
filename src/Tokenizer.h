@@ -3,6 +3,9 @@
 
 #include <string>
 #include <vector>
+#include <map>
+#include <variant>
+
 
 enum TokenTypes {
     NumberLiteral,
@@ -23,8 +26,28 @@ enum TokenTypes {
     Endl,
 };
 
+extern std::map<TokenTypes, std::string> TokenTypeNames = {
+        {NumberLiteral, "NumberLiteral"},
+        {Identifier, "Identifier"},
+        {Equal, "Equal"},
+        {Plus, "Plus"},
+        {Minus, "Minus"},
+        {Star, "Star"},
+        {Slash, "Slash"},
+        {L_Paren, "L_Paren"},
+        {R_Paren, "R_Paren"},
+        {L_Bracket, "L_Bracket"},
+        {R_Bracket, "R_Bracket"},
+        {Semicol, "Semicolon"},
+        {Colon, "Colon"},
+        {Hashtag, "Hashtag"},
+        {Space, "Space"},
+        {Endl, "Endl"}
+};
+
+
 struct Token {
-    TokenTypes token_type;
+    std::variant<std::string, TokenTypes> token_type;
     std::string lexem;
 };
 
