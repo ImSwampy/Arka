@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o CMakeFiles/my_own_programming_language.dir/src/main.cpp.o -o my_own_programming_language 

@@ -25,8 +25,8 @@ enum TokenTypes {
     Space,
     Endl,
 };
-
-extern std::map<TokenTypes, std::string> TokenTypeNames = {
+/*
+std::map<TokenTypes, std::string> TokenTypeNames = {
         {NumberLiteral, "NumberLiteral"},
         {Identifier, "Identifier"},
         {Equal, "Equal"},
@@ -44,10 +44,11 @@ extern std::map<TokenTypes, std::string> TokenTypeNames = {
         {Space, "Space"},
         {Endl, "Endl"}
 };
+*/
 
 
 struct Token {
-    std::variant<std::string, TokenTypes> token_type;
+    std::string token_type;
     std::string lexem;
 };
 

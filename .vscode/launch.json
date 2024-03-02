@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MAKE",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "clear && [ \"$(pwd)\" != \"build\" ] && make && ./my_own_programming_language && echo \"\"",
+        }
+    ]
+}
