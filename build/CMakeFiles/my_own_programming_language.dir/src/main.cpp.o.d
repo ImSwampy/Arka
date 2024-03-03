@@ -155,4 +155,8 @@ CMakeFiles/my_own_programming_language.dir/src/main.cpp.o: \
  /usr/include/c++/13.2.1/bits/stl_multimap.h \
  /usr/include/c++/13.2.1/bits/erase_if.h /usr/include/c++/13.2.1/variant \
  /usr/include/c++/13.2.1/bits/enable_special_members.h \
- /usr/include/c++/13.2.1/bits/parse_numbers.h
+ /usr/include/c++/13.2.1/bits/parse_numbers.h \
+ /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/bits/codecvt.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/13.2.1/bits/fstream.tcc
