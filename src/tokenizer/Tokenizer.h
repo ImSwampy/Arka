@@ -30,7 +30,9 @@ enum TokenTypes {
     R_Angle_Bracket,
     D_Quote,
     Quote,
-    Dollar_Sign
+    Dollar,
+    Dot,
+    Comma
 };
 
 extern std::map<TokenTypes, std::string> TokenTypeNames;

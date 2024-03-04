@@ -22,7 +22,11 @@ std::map<TokenTypes, std::string>TokenTypeNames = {
         {Hashtag, "Hashtag"},
         {L_Angle_Bracket, "L_Angle_Bracket"},
         {R_Angle_Bracket, "R_Angle_Bracket"},
-        {Dollar_Sign, "Dollar_Sign"},
+        {Quote, "Quote"},
+        {D_Quote, "D_Quote"},
+        {Dollar, "Dollar_Sign"},
+        {Dot, "Dot"},
+        {Comma, "Comma"},
 };
 
 
@@ -58,6 +62,23 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
             continue;        
         }
 
+        if (current_char == '/' && code.at(pos+1) == '*') {
+            ++pos;
+            while (current_char != '*' && code.at(pos+1) != '/') {
+                ++pos;
+            }
+            pos += 2;
+            continue;  
+        }
+
+        if (current_char == '/' && code.at(pos+1) == '/') {
+            ++pos;
+            while (code.at(pos) != '\n') {
+                ++pos;
+            }
+            continue;  
+        }
+
         //check for symbols
         switch (current_char) {
             case EQUAL: result.push_back(Token{TokenTypeNames.at(Equal), std::string(1, current_char)}); break;
@@ -76,11 +97,14 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
             case R_ANGLE_BRA: result.push_back(Token{TokenTypeNames.at(R_Angle_Bracket), std::string(1, current_char)}); break;
             case QUOTE: result.push_back(Token{TokenTypeNames.at(Quote), std::string(1, current_char)}); break;
             case DOUBLE_QUOTE: result.push_back(Token{TokenTypeNames.at(D_Quote), std::string(1, current_char)}); break;
-            case DOLLAR: result.push_back(Token{TokenTypeNames.at(Dollar_Sign), std::string(1, current_char)}); break; //this line cause the crash (#define DOLLAR '$')
+            case DOLLAR: result.push_back(Token{TokenTypeNames.at(Dollar), std::string(1, current_char)}); break;
+            case DOT: result.push_back(Token{TokenTypeNames.at(Dot), std::string(1, current_char)}); break;
+            case COMMA: result.push_back(Token{TokenTypeNames.at(Dollar), std::string(1, current_char)}); break;
             case SPACE: break;
             case ENDL: break;
-            case TAB: break;
+            case TAB: break;;
             default:
+                std::cerr << "UNDEFINED Token: " << current_char << std::endl;
                 result.push_back(Token{"UNDEFINED", std::string(1, current_char)});
                 break;
         }

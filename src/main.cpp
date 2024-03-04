@@ -1,15 +1,6 @@
 #include <iostream>
-#include <Tokenizer.h>
+#include <tokenizer/Tokenizer.h>
 #include <fstream>
-
-bool is_useless_char(Token t) {
-
-    if (t.lexem == ";" || t.lexem == "=" || t.lexem == "$" || t.token_type == "SEMI_COLON" || t.token_type == "EQUAL" || t.token_type == "Dollar_Sign") {
-        return true;
-    } else {
-        return false;
-    }
-}
 
 
 int main(int argc, char *argv[]) {
@@ -25,19 +16,14 @@ int main(int argc, char *argv[]) {
     } else {
         std::string buffer;
         while (std::getline(FILE, buffer)) {
-            full_string.append(buffer);
+            full_string.append(buffer + '\n');
         }
     }
     FILE.close();
     Tokenizer tokenizer;
     std::vector<Token> res = tokenizer.tokenize(full_string);
     for (const Token& t : res) {
-        if (!is_useless_char(t)){
-            std::cout << "[" << t.token_type << "; \"" << t.lexem << "\"]" << " ";
-        } else {
-            std::cout << "[" << t.token_type << "]" << " ";
-        }
-        
+            std::cout << "[" << t.token_type << "; \"" << t.lexem << "\"]" << std::endl;
     }
     return 0;
 }

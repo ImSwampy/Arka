@@ -69,19 +69,19 @@ include CMakeFiles/my_own_programming_language.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_own_programming_language.dir/flags.make
 
-CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o: CMakeFiles/my_own_programming_language.dir/flags.make
-CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o: /home/swampy/Documents/Development/Arka/src/Tokenizer.cpp
-CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o: CMakeFiles/my_own_programming_language.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/swampy/Documents/Development/Arka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o -MF CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o.d -o CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o -c /home/swampy/Documents/Development/Arka/src/Tokenizer.cpp
+CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o: CMakeFiles/my_own_programming_language.dir/flags.make
+CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o: /home/swampy/Documents/Development/Arka/src/tokenizer/Tokenizer.cpp
+CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o: CMakeFiles/my_own_programming_language.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/swampy/Documents/Development/Arka/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o -MF CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o.d -o CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o -c /home/swampy/Documents/Development/Arka/src/tokenizer/Tokenizer.cpp
 
-CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swampy/Documents/Development/Arka/src/Tokenizer.cpp > CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.i
+CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swampy/Documents/Development/Arka/src/tokenizer/Tokenizer.cpp > CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.i
 
-CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swampy/Documents/Development/Arka/src/Tokenizer.cpp -o CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.s
+CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swampy/Documents/Development/Arka/src/tokenizer/Tokenizer.cpp -o CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.s
 
 CMakeFiles/my_own_programming_language.dir/src/main.cpp.o: CMakeFiles/my_own_programming_language.dir/flags.make
 CMakeFiles/my_own_programming_language.dir/src/main.cpp.o: /home/swampy/Documents/Development/Arka/src/main.cpp
@@ -99,13 +99,13 @@ CMakeFiles/my_own_programming_language.dir/src/main.cpp.s: cmake_force
 
 # Object files for target my_own_programming_language
 my_own_programming_language_OBJECTS = \
-"CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o" \
+"CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o" \
 "CMakeFiles/my_own_programming_language.dir/src/main.cpp.o"
 
 # External object files for target my_own_programming_language
 my_own_programming_language_EXTERNAL_OBJECTS =
 
-my_own_programming_language: CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o
+my_own_programming_language: CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o
 my_own_programming_language: CMakeFiles/my_own_programming_language.dir/src/main.cpp.o
 my_own_programming_language: CMakeFiles/my_own_programming_language.dir/build.make
 my_own_programming_language: CMakeFiles/my_own_programming_language.dir/link.txt

@@ -10,7 +10,7 @@ include_directories(src)
 
 add_executable(my_own_programming_language
     src/Types.h 
-    src/Tokenizer.cpp 
-    src/Tokenizer.h 
+    src/tokenizer/Tokenizer.cpp 
+    src/tokenizer/Tokenizer.h 
     src/main.cpp
 )

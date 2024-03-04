@@ -129,30 +129,6 @@ my_own_programming_language/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/build
 .PHONY : my_own_programming_language/fast
 
-src/Tokenizer.o: src/Tokenizer.cpp.o
-.PHONY : src/Tokenizer.o
-
-# target to build an object file
-src/Tokenizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.o
-.PHONY : src/Tokenizer.cpp.o
-
-src/Tokenizer.i: src/Tokenizer.cpp.i
-.PHONY : src/Tokenizer.i
-
-# target to preprocess a source file
-src/Tokenizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.i
-.PHONY : src/Tokenizer.cpp.i
-
-src/Tokenizer.s: src/Tokenizer.cpp.s
-.PHONY : src/Tokenizer.s
-
-# target to generate assembly for a file
-src/Tokenizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/Tokenizer.cpp.s
-.PHONY : src/Tokenizer.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -177,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/tokenizer/Tokenizer.o: src/tokenizer/Tokenizer.cpp.o
+.PHONY : src/tokenizer/Tokenizer.o
+
+# target to build an object file
+src/tokenizer/Tokenizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o
+.PHONY : src/tokenizer/Tokenizer.cpp.o
+
+src/tokenizer/Tokenizer.i: src/tokenizer/Tokenizer.cpp.i
+.PHONY : src/tokenizer/Tokenizer.i
+
+# target to preprocess a source file
+src/tokenizer/Tokenizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.i
+.PHONY : src/tokenizer/Tokenizer.cpp.i
+
+src/tokenizer/Tokenizer.s: src/tokenizer/Tokenizer.cpp.s
+.PHONY : src/tokenizer/Tokenizer.s
+
+# target to generate assembly for a file
+src/tokenizer/Tokenizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.s
+.PHONY : src/tokenizer/Tokenizer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_own_programming_language"
-	@echo "... src/Tokenizer.o"
-	@echo "... src/Tokenizer.i"
-	@echo "... src/Tokenizer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tokenizer/Tokenizer.o"
+	@echo "... src/tokenizer/Tokenizer.i"
+	@echo "... src/tokenizer/Tokenizer.s"
 .PHONY : help
 
 

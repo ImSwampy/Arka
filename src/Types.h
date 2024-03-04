@@ -35,3 +35,5 @@
 #define L_ANGLE_BRA '<'
 #define R_ANGLE_BRA '>'
 #define DOLLAR '$'
+#define DOT '.'
+#define COMMA ','
