@@ -11,10 +11,6 @@ public:
     Token *tokens = new Token[tok_size];
 
 
-    void identify_token(Token tok[]) {
-
-    }
-
     void consume_token(Token tok[]) {
         
     }

@@ -32,7 +32,8 @@ enum TokenTypes {
     Quote,
     Dollar,
     Dot,
-    Comma
+    Comma,
+    UNDEFINED,
 };
 
 extern std::map<TokenTypes, std::string> TokenTypeNames;
@@ -40,7 +41,7 @@ extern std::map<TokenTypes, std::string> TokenTypeNames;
 
 
 struct Token {
-    std::string token_type;
+    TokenTypes token_type;
     std::string lexem;
 };
 
