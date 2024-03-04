@@ -32,3 +32,6 @@
 #define PLUS '+'
 #define MINUS '-'
 #define STAR '*'
+#define L_ANGLE_BRA '<'
+#define R_ANGLE_BRA '>'
+#define DOLLAR '$'

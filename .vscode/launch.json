@@ -5,7 +5,7 @@
             "name": "MAKE",
             "type": "f5anything",
             "request": "launch",
-            "command": "clear && [ \"$(pwd)\" != \"build\" ] && make && ./my_own_programming_language && echo \"\"",
+            "command": "[ \"$(pwd)\" != \"/build\" ] && cd build/ && make && ./my_own_programming_language example_1.txt && echo || make && ./my_own_programming_language ../example_1.txt && echo"
         }
     ]
 }

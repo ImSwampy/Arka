@@ -24,27 +24,17 @@ enum TokenTypes {
     Hashtag,
     Space,
     Endl,
+    A_Slash,
+    Tab,
+    L_Angle_Bracket,
+    R_Angle_Bracket,
+    D_Quote,
+    Quote,
+    Dollar_Sign
 };
-/*
-std::map<TokenTypes, std::string> TokenTypeNames = {
-        {NumberLiteral, "NumberLiteral"},
-        {Identifier, "Identifier"},
-        {Equal, "Equal"},
-        {Plus, "Plus"},
-        {Minus, "Minus"},
-        {Star, "Star"},
-        {Slash, "Slash"},
-        {L_Paren, "L_Paren"},
-        {R_Paren, "R_Paren"},
-        {L_Bracket, "L_Bracket"},
-        {R_Bracket, "R_Bracket"},
-        {Semicol, "Semicolon"},
-        {Colon, "Colon"},
-        {Hashtag, "Hashtag"},
-        {Space, "Space"},
-        {Endl, "Endl"}
-};
-*/
+
+extern std::map<TokenTypes, std::string> TokenTypeNames;
+
 
 
 struct Token {

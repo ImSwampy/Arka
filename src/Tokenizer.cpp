@@ -1,9 +1,30 @@
-#include "Tokenizer.h"
-#include "Types.h"
 #include <stdexcept>
 #include <iostream>
 
+#include "Types.h"
 #include "Tokenizer.h"
+
+std::map<TokenTypes, std::string>TokenTypeNames = {
+        {NumberLiteral, "NumberLiteral"},
+        {Identifier, "Identifier"},
+        {Equal, "Equal"},
+        {Plus, "Plus"},
+        {Minus, "Minus"},
+        {Star, "Star"},
+        {Slash, "Slash"},
+        {A_Slash, "A_Slash"},
+        {L_Paren, "L_Paren"},
+        {R_Paren, "R_Paren"},
+        {L_Bracket, "L_Bracket"},
+        {R_Bracket, "R_Bracket"},
+        {Semicol, "Semicolon"},
+        {Colon, "Colon"},
+        {Hashtag, "Hashtag"},
+        {L_Angle_Bracket, "L_Angle_Bracket"},
+        {R_Angle_Bracket, "R_Angle_Bracket"},
+        {Dollar_Sign, "Dollar_Sign"},
+};
+
 
 
 std::vector<Token> Tokenizer::tokenize(std::string code) {
@@ -21,7 +42,7 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
                 }
             } catch (...){}
 
-            result.push_back(Token{"Digit", return_num});
+            result.push_back(Token{TokenTypeNames.at(NumberLiteral), return_num});
             continue;
         }
 
@@ -33,26 +54,32 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
                 }
             } catch (...){}
 
-            result.push_back(Token{"Identifier", return_str});  
+            result.push_back(Token{TokenTypeNames.at(Identifier), return_str});
             continue;        
         }
 
         //check for symbols
         switch (current_char) {
-            case EQUAL: result.push_back(Token{"EQUAL", "="}); break;
-            case SLASH: result.push_back(Token{"SLASH", "/"}); break;
-            case PLUS: result.push_back(Token{"PLUS", "+"}); break;
-            case MINUS: result.push_back(Token{"MINUS", "-"}); break;
-            case STAR: result.push_back(Token{"STAR", "*"}); break;
-            case L_PAR: result.push_back(Token{"L_PAR", "("}); break;
-            case R_PAR: result.push_back(Token{"R_PAR", ")"}); break;
-            case L_BRAQ: result.push_back(Token{"L_BRAQ", "{"}); break;
-            case R_BRAQ: result.push_back(Token{"R_BRAQ", "}"}); break;
-            case SEMI_COLON: result.push_back(Token{"SEMI_COLON", ";"}); break;
-            case COLON: result.push_back(Token{"COLON", ":"}); break;
-            case HASHTAG: result.push_back(Token{"HASHTAG", "#"}); break;
-            case SPACE: result.push_back(Token{"SPACE", " "}); break;
-            case ENDL: result.push_back(Token{"ENDL", "\n"}); break;
+            case EQUAL: result.push_back(Token{TokenTypeNames.at(Equal), std::string(1, current_char)}); break;
+            case SLASH: result.push_back(Token{TokenTypeNames.at(Slash), std::string(1, current_char)}); break;
+            case PLUS: result.push_back(Token{TokenTypeNames.at(Plus), std::string(1, current_char)}); break;
+            case MINUS: result.push_back(Token{TokenTypeNames.at(Minus), std::string(1, current_char)}); break;
+            case STAR: result.push_back(Token{TokenTypeNames.at(Star), std::string(1, current_char)}); break;
+            case L_PAR: result.push_back(Token{TokenTypeNames.at(L_Paren), std::string(1, current_char)}); break;
+            case R_PAR: result.push_back(Token{TokenTypeNames.at(R_Paren), std::string(1, current_char)}); break;
+            case L_BRAQ: result.push_back(Token{TokenTypeNames.at(L_Bracket), std::string(1, current_char)}); break;
+            case R_BRAQ: result.push_back(Token{TokenTypeNames.at(R_Bracket), std::string(1, current_char)}); break;
+            case SEMI_COLON: result.push_back(Token{TokenTypeNames.at(Semicol), std::string(1, current_char)}); break;
+            case COLON: result.push_back(Token{TokenTypeNames.at(Colon), std::string(1, current_char)}); break;
+            case HASHTAG: result.push_back(Token{TokenTypeNames.at(Hashtag), std::string(1, current_char)}); break;
+            case L_ANGLE_BRA: result.push_back(Token{TokenTypeNames.at(L_Angle_Bracket), std::string(1, current_char)}); break;
+            case R_ANGLE_BRA: result.push_back(Token{TokenTypeNames.at(R_Angle_Bracket), std::string(1, current_char)}); break;
+            case QUOTE: result.push_back(Token{TokenTypeNames.at(Quote), std::string(1, current_char)}); break;
+            case DOUBLE_QUOTE: result.push_back(Token{TokenTypeNames.at(D_Quote), std::string(1, current_char)}); break;
+            case DOLLAR: result.push_back(Token{TokenTypeNames.at(Dollar_Sign), std::string(1, current_char)}); break; //this line cause the crash (#define DOLLAR '$')
+            case SPACE: break;
+            case ENDL: break;
+            case TAB: break;
             default:
                 result.push_back(Token{"UNDEFINED", std::string(1, current_char)});
                 break;
