@@ -53,7 +53,7 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
         if (isalpha(current_char)) {
             std::string return_str(1, current_char);    
             try {
-                while (isalpha(code.at(++pos))) {
+                while (isalnum(code.at(++pos))) {
                     return_str.push_back(code.at(pos));
                 }
             } catch (...){}
@@ -61,7 +61,7 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
             result.push_back(Token{TokenTypeNames.at(Identifier), return_str});
             continue;        
         }
-
+        // ignore comments
         if (current_char == '/' && code.at(pos+1) == '*') {
             ++pos;
             while (current_char != '*' && code.at(pos+1) != '/') {
@@ -71,6 +71,7 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
             continue;  
         }
 
+        //ignore single line comments
         if (current_char == '/' && code.at(pos+1) == '/') {
             ++pos;
             while (code.at(pos) != '\n') {
