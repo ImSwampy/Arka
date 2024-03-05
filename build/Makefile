@@ -177,6 +177,30 @@ src/tokenizer/Tokenizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.s
 .PHONY : src/tokenizer/Tokenizer.cpp.s
 
+src/utils/ReadFile.o: src/utils/ReadFile.cpp.o
+.PHONY : src/utils/ReadFile.o
+
+# target to build an object file
+src/utils/ReadFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.o
+.PHONY : src/utils/ReadFile.cpp.o
+
+src/utils/ReadFile.i: src/utils/ReadFile.cpp.i
+.PHONY : src/utils/ReadFile.i
+
+# target to preprocess a source file
+src/utils/ReadFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.i
+.PHONY : src/utils/ReadFile.cpp.i
+
+src/utils/ReadFile.s: src/utils/ReadFile.cpp.s
+.PHONY : src/utils/ReadFile.s
+
+# target to generate assembly for a file
+src/utils/ReadFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_own_programming_language.dir/build.make CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.s
+.PHONY : src/utils/ReadFile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/tokenizer/Tokenizer.o"
 	@echo "... src/tokenizer/Tokenizer.i"
 	@echo "... src/tokenizer/Tokenizer.s"
+	@echo "... src/utils/ReadFile.o"
+	@echo "... src/utils/ReadFile.i"
+	@echo "... src/utils/ReadFile.s"
 .PHONY : help
 
 

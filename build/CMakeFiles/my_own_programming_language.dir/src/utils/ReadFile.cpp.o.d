@@ -1,6 +1,8 @@
-CMakeFiles/my_own_programming_language.dir/src/main.cpp.o: \
- /home/swampy/Documents/Development/Arka/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13.2.1/iostream \
+CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.o: \
+ /home/swampy/Documents/Development/Arka/src/utils/ReadFile.cpp \
+ /usr/include/stdc-predef.h \
+ /home/swampy/Documents/Development/Arka/src/utils/ReadFile.h \
+ /usr/include/c++/13.2.1/fstream \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -10,7 +12,7 @@ CMakeFiles/my_own_programming_language.dir/src/main.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/13.2.1/pstl/pstl_config.h \
- /usr/include/c++/13.2.1/ostream /usr/include/c++/13.2.1/ios \
+ /usr/include/c++/13.2.1/istream /usr/include/c++/13.2.1/ios \
  /usr/include/c++/13.2.1/iosfwd /usr/include/c++/13.2.1/bits/stringfwd.h \
  /usr/include/c++/13.2.1/bits/memoryfwd.h \
  /usr/include/c++/13.2.1/bits/postypes.h /usr/include/c++/13.2.1/cwchar \
@@ -140,25 +142,23 @@ CMakeFiles/my_own_programming_language.dir/src/main.cpp.o: \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
- /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
+ /usr/include/c++/13.2.1/ostream /usr/include/c++/13.2.1/bits/ostream.tcc \
  /usr/include/c++/13.2.1/bits/istream.tcc \
- /home/swampy/Documents/Development/Arka/src/tokenizer/Tokenizer.h \
- /usr/include/c++/13.2.1/vector \
+ /usr/include/c++/13.2.1/bits/codecvt.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/13.2.1/bits/fstream.tcc \
+ /usr/include/c++/13.2.1/iostream /usr/include/c++/13.2.1/vector \
  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/13.2.1/bits/stl_vector.h \
  /usr/include/c++/13.2.1/bits/stl_bvector.h \
- /usr/include/c++/13.2.1/bits/vector.tcc /usr/include/c++/13.2.1/map \
- /usr/include/c++/13.2.1/bits/stl_tree.h \
+ /usr/include/c++/13.2.1/bits/vector.tcc \
+ /home/swampy/Documents/Development/Arka/src/utils/../tokenizer/Tokenizer.h \
+ /usr/include/c++/13.2.1/map /usr/include/c++/13.2.1/bits/stl_tree.h \
  /usr/include/c++/13.2.1/ext/aligned_buffer.h \
  /usr/include/c++/13.2.1/bits/node_handle.h \
  /usr/include/c++/13.2.1/bits/stl_map.h \
  /usr/include/c++/13.2.1/bits/stl_multimap.h \
  /usr/include/c++/13.2.1/bits/erase_if.h /usr/include/c++/13.2.1/variant \
  /usr/include/c++/13.2.1/bits/enable_special_members.h \
- /usr/include/c++/13.2.1/bits/parse_numbers.h \
- /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/bits/codecvt.h \
- /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/13.2.1/bits/fstream.tcc \
- /home/swampy/Documents/Development/Arka/src/utils/ReadFile.h \
- /home/swampy/Documents/Development/Arka/src/utils/../tokenizer/Tokenizer.h
+ /usr/include/c++/13.2.1/bits/parse_numbers.h

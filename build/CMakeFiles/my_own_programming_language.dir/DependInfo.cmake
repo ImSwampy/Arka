@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/swampy/Documents/Development/Arka/src/main.cpp" "CMakeFiles/my_own_programming_language.dir/src/main.cpp.o" "gcc" "CMakeFiles/my_own_programming_language.dir/src/main.cpp.o.d"
   "/home/swampy/Documents/Development/Arka/src/tokenizer/Tokenizer.cpp" "CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o" "gcc" "CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.o.d"
+  "/home/swampy/Documents/Development/Arka/src/utils/ReadFile.cpp" "CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.o" "gcc" "CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

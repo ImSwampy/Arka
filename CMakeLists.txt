@@ -13,4 +13,10 @@ add_executable(my_own_programming_language
     src/tokenizer/Tokenizer.cpp 
     src/tokenizer/Tokenizer.h 
     src/main.cpp
+    src/utils/ReadFile.cpp
+    src/utils/ReadFile.h
+    # src/parser/Parser.cpp
+    # src/parser/Parser.h
+    # src/parser/AST/AST.cpp
+    # src/parser/AST/AST.h
 )

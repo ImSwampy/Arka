@@ -10,5 +10,11 @@
   "command": "/usr/bin/g++  -I/home/swampy/Documents/Development/Arka/src -g -std=gnu++23 -o CMakeFiles/my_own_programming_language.dir/src/main.cpp.o -c /home/swampy/Documents/Development/Arka/src/main.cpp",
   "file": "/home/swampy/Documents/Development/Arka/src/main.cpp",
   "output": "CMakeFiles/my_own_programming_language.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/swampy/Documents/Development/Arka/build",
+  "command": "/usr/bin/g++  -I/home/swampy/Documents/Development/Arka/src -g -std=gnu++23 -o CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.o -c /home/swampy/Documents/Development/Arka/src/utils/ReadFile.cpp",
+  "file": "/home/swampy/Documents/Development/Arka/src/utils/ReadFile.cpp",
+  "output": "CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.o"
 }
 ]
