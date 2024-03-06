@@ -1,8 +1,7 @@
 #include "Parser.h"
 
 void Parser::parse(std::vector<Token> &tokens) {
-    current_token = tokens.begin();
-    end_token = tokens.end();
+
 }
 
 // void Parser::identify_tokens(std::vector<Token> tok) {

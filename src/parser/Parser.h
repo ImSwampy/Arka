@@ -2,35 +2,66 @@
 #define ARKA_PARSER_H
 
 #include "AST/AST.h"
+#include "item/item.h"
 #include <vector>
 
 class Parser {
 public:
 
-    void parse(std::vector<Token> &tokens);
+    void parse(std::vector<Token> &tokens); //idk for now
 
-    void identify_tokens(std::vector<Token> tok);
+    void identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
+
+    void merge_token(std::vector<Token> tok); // detect what the vector is about
+
+    void consume_token(Token tok); // add token to the AST
 
 
 private:
 
-    char separator = ';'; 
+    Item item;
+    Token current_token;
+    AST tree;
+};
 
-    std::vector<Token>::iterator current_token;
-    std::vector<Token>::iterator end_token;
+struct Type {
 
-    size_t token_list_size;
-    Token *tokens = new Token[token_list_size];
+    enum Program {
+        name,
+        start,
+        end
+    };
 
-    struct Types {
-        enum Type {
-            VAR,
-            FUNCTION,
-            IMPORT
-        };
-        
-        
+    enum Body {
+
+    };
+
+    enum Expression {
+        type,
+        value,
+        start,
+        end
+    };
+
+    enum Import {
+        name,
+        location,
+        hash,
+    };
+
+    enum Function {
+        name,
+        return_type,
+        parameters,
+        value
+    };
+
+    enum Classes {
+        name,
+        value
     };
 };
+
+
 
 #endif //ARKA_PARSER_H
