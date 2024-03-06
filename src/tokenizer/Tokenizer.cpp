@@ -32,18 +32,16 @@ std::map<TokenTypes, std::string>TokenTypeNames = {
 
 
 std::vector<Token> Tokenizer::tokenize(std::string code) {
-    size_t pos = 0;
-
-    
+    size_t pos = 0;    
     std::vector<Token> result;
-
     for (pos; pos < code.length(); pos++){
         char current_char = code.at(pos);
 
         if (isdigit(current_char)) {
             std::string return_num(1, current_char);
 
-            while (pos+1 < code.length() && isdigit(code.at(++pos))) {
+            while (pos+1 < code.length() && isdigit(code.at(pos+1))) {
+                pos++;
                 return_num.push_back(code.at(pos));
             }
 
@@ -54,7 +52,8 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
         if (isalpha(current_char)) {
             std::string return_str(1, current_char);
 
-            while (pos+1 < code.length() && isalnum(code.at(++pos))) {
+            while (pos+1 < code.length() && isalnum(code.at(pos+1))) {
+                pos++;
                 return_str.push_back(code.at(pos));
             }
             
@@ -64,9 +63,9 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
         
         // ignore comments
         if (pos+1 < code.length() && current_char == '/' && code.at(pos+1) == '*') {
-            ++pos;
+            pos++;
             while (pos+1 < code.length() && current_char != '*' && code.at(pos+1) != '/') {
-                ++pos;
+                pos++;
             }
             pos += 2;
             continue;  
@@ -74,9 +73,9 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
 
         //ignore single line comments
         if (pos+1 < code.length() && current_char == '/' && code.at(pos+1) == '/') {
-            ++pos;
+            pos++;
             while (pos+1 < code.length() && code.at(pos) != '\n' && code.at(pos) != '\0')  {
-                ++pos;
+                pos++;
             }
             continue;  
         }

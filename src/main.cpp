@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     res = read_lines_tokenize(FILE, tokenizer);
 
     for (const Token t : res) {
-            std::cout << "[" << TokenTypeNames.at(t.token_type) << "; \"" << t.lexem << "\"]" << std::endl;
+            std::cout << "[" << TokenTypeNames.at(t.token_type) << "; \"" << t.lexem << "\"]" << "\n";
     }
     return 0;
 }
