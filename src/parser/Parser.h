@@ -12,7 +12,7 @@ public:
 
     void identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
 
-    void merge_token(std::vector<Token> tok); // detect what the vector is about
+    void merge_token(std::vector<Token> tok); // detect what the vector is about (var, func...)
 
     void consume_token(Token tok); // add token to the AST
 
@@ -43,12 +43,6 @@ struct Type {
         end
     };
 
-    enum Import {
-        name,
-        location,
-        hash,
-    };
-
     enum Function {
         name,
         return_type,
@@ -59,6 +53,11 @@ struct Type {
     enum Classes {
         name,
         value
+    };
+
+    enum Preprocess {
+        type,
+        args
     };
 };
 
