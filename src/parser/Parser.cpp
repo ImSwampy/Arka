@@ -7,9 +7,7 @@ void Parser::parse(std::vector<Token> &tokens) {
 void Parser::identify_tokens(std::vector<Token> tok) {
     for (Token t : tok) {
         switch (t.token_type) {
-            case TokenTypes::Hashtag: {
-
-            }
+            case TokenTypes::Hashtag: 
         }
     }
 }

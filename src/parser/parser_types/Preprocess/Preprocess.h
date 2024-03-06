@@ -1,9 +1,10 @@
 #ifndef ARKA_PARSER_PREPROCESS_H
 #define ARKA_PARSER_PREPROCESS_H
 
-// Your class declaration here
+#include <parser/Parser.h>
+
 class Preprocess {
-    // Class members and methods
+    Preprocess(Type::Preprocess::type , )
 };
 
 #endif // ARKA_PARSER_PREPROCESS_H

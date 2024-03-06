@@ -4,6 +4,7 @@
 #include "AST/AST.h"
 #include "item/item.h"
 #include <vector>
+#include <variant>
 
 class Parser {
 public:
@@ -36,28 +37,28 @@ struct Type {
 
     };
 
-    enum Expression {
-        type,
-        value,
+    struct Expression {
+        std::string type,
+        ,
         start,
         end
     };
 
-    enum Function {
+    struct Function {
         name,
         return_type,
         parameters,
         value
     };
 
-    enum Classes {
+    struct Classes {
         name,
         value
     };
 
-    enum Preprocess {
-        type,
-        args
+    struct Preprocess {
+        std::string type;
+        std::string args[];
     };
 };
 
