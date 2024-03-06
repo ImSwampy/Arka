@@ -1,3 +1,0 @@
-/home/swampy/Documents/Development/Arka/build/CMakeFiles/my_own_programming_language.dir
-/home/swampy/Documents/Development/Arka/build/CMakeFiles/edit_cache.dir
-/home/swampy/Documents/Development/Arka/build/CMakeFiles/rebuild_cache.dir
