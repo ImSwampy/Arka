@@ -3,7 +3,7 @@
 var foo<int> = 6;
 
 var ptr<int*> = &foo;
-var ptr2<int*> = null;
+var ptr2<int*> = nullptr;
 *ptr2 = &foo;
 
-Console.print("${foo}\t${*ptr}\t${*ptr2}"); //6  6  6 
+Console.print("${foo}\t${*ptr}\t${*ptr2}"); //6  6  6

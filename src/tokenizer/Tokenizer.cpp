@@ -33,38 +33,39 @@ std::map<TokenTypes, std::string>TokenTypeNames = {
 
 std::vector<Token> Tokenizer::tokenize(std::string code) {
     size_t pos = 0;
+
+    
     std::vector<Token> result;
 
-    while (pos < code.length()) {
+    for (pos; pos < code.length(); pos++){
         char current_char = code.at(pos);
 
         if (isdigit(current_char)) {
             std::string return_num(1, current_char);
-            try {
-                while (isdigit(code.at(++pos))) {
-                    return_num.push_back(code.at(pos));
-                }
-            } catch (...){}
+
+            while (pos+1 < code.length() && isdigit(code.at(++pos))) {
+                return_num.push_back(code.at(pos));
+            }
 
             result.push_back(Token{TokenTypes::NumberLiteral, return_num});
             continue;
         }
 
         if (isalpha(current_char)) {
-            std::string return_str(1, current_char);    
-            try {
-                while (isalnum(code.at(++pos))) {
-                    return_str.push_back(code.at(pos));
-                }
-            } catch (...){}
+            std::string return_str(1, current_char);
 
+            while (pos+1 < code.length() && isalnum(code.at(++pos))) {
+                return_str.push_back(code.at(pos));
+            }
+            
             result.push_back(Token{TokenTypes::Identifier, return_str});
             continue;        
         }
+        
         // ignore comments
-        if (current_char == '/' && code.at(pos+1) == '*') {
+        if (pos+1 < code.length() && current_char == '/' && code.at(pos+1) == '*') {
             ++pos;
-            while (current_char != '*' && code.at(pos+1) != '/') {
+            while (pos+1 < code.length() && current_char != '*' && code.at(pos+1) != '/') {
                 ++pos;
             }
             pos += 2;
@@ -72,9 +73,9 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
         }
 
         //ignore single line comments
-        if (current_char == '/' && code.at(pos+1) == '/') {
+        if (pos+1 < code.length() && current_char == '/' && code.at(pos+1) == '/') {
             ++pos;
-            while (code.at(pos) != '\n') {
+            while (pos+1 < code.length() && code.at(pos) != '\n' && code.at(pos) != '\0')  {
                 ++pos;
             }
             continue;  
@@ -85,6 +86,7 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
             case SPACE: break;
             case ENDL: break;
             case TAB: break;
+
             case EQUAL: result.push_back(Token{Equal, std::string(1, current_char)}); break;
             case SLASH: result.push_back(Token{Slash, std::string(1, current_char)}); break;
             case PLUS: result.push_back(Token{Plus, std::string(1, current_char)}); break;
@@ -110,7 +112,6 @@ std::vector<Token> Tokenizer::tokenize(std::string code) {
                 result.push_back(Token{UNDEFINED, std::string(1, current_char)});
                 break;
         }
-        pos++;
     }
 
     return result;

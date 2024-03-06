@@ -18,17 +18,18 @@ std::string read_file(std::fstream &FILE) {
 std::vector<Token> read_lines_tokenize(std::fstream &FILE, Tokenizer tokenizer) {
     std::vector<Token> result;
     if (!FILE.is_open()) {
-        std::cerr << "Failed to open file." << std::endl;
-        exit(1);
+        
     } else {
         std::string buffer;
         while (std::getline(FILE, buffer)) {
-            if (!buffer.empty()) {
+            if (!buffer.empty() || buffer != "\n") {
                 std::vector<Token> temp = tokenizer.tokenize(buffer);
+                buffer.clear();
                 if (!temp.empty()) {
-                    for (int i = 0; i < temp.size(); i++) {
-                        result.push_back(temp[i]);
+                    for (Token t : temp) {
+                        result.push_back(t);
                     }
+                    temp.clear();
                 }
             }
         }

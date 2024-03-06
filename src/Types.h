@@ -37,3 +37,4 @@
 #define DOLLAR '$'
 #define DOT '.'
 #define COMMA ','
+#define NULLTOK '\0'

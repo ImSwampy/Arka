@@ -13,16 +13,11 @@ int main(int argc, char *argv[]) {
     std::fstream FILE = std::fstream(argv[1], std::ios::in);
     std::vector<Token> res;
 
-    if (FILE.is_open()) {
-        Tokenizer tokenizer;
-        res = read_lines_tokenize(FILE, tokenizer);
-    } else {
-        std::cerr << "cant open file: " << argv[1] << std::endl;
-        return 0;
-    };
+    Tokenizer tokenizer;
+    res = read_lines_tokenize(FILE, tokenizer);
 
     for (const Token t : res) {
-            std::cout << "[" << t.token_type << "; \"" << t.lexem << "\"]" << std::endl;
+            std::cout << "[" << TokenTypeNames.at(t.token_type) << "; \"" << t.lexem << "\"]" << std::endl;
     }
     return 0;
 }
