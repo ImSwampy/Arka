@@ -3,8 +3,12 @@
 
 #include "AST/AST.h"
 #include "item/item.h"
+#include "parser_types/Preprocess/Preprocess.h"
+
 #include <vector>
 #include <variant>
+#include <list>
+#include <utility>
 
 class Parser {
 public:
@@ -27,40 +31,43 @@ private:
 
 struct Type {
 
-    enum Program {
-        name,
-        start,
-        end
+    struct Program {
+        std::string name;
+        uint start;
+        uint end;
     };
 
-    enum Body {
+    struct Body {
 
     };
 
     struct Expression {
-        std::string type,
-        ,
-        start,
-        end
+        std::string type;
+        std::string identifier;
+        uint start;
+        uint end;
     };
 
     struct Function {
-        name,
-        return_type,
-        parameters,
-        value
+        std::string name;
+        std::string return_type;
+        int parameters_num;
+        std::list<Type::Expression> parameters;
     };
 
     struct Classes {
-        name,
-        value
+        std::string name;
     };
 
-    struct Preprocess {
+    typedef struct Preprocess {
         std::string type;
         std::string args[];
     };
 };
+
+struct TotalType {
+    Type::Preprocess preprocess;
+}
 
 
 

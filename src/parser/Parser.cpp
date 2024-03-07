@@ -5,9 +5,19 @@ void Parser::parse(std::vector<Token> &tokens) {
 }
 
 void Parser::identify_tokens(std::vector<Token> tok) {
+    TotalType *current_item = new TotalType{};
+    Type yes;
     for (Token t : tok) {
         switch (t.token_type) {
-            case TokenTypes::Hashtag: 
+            case TokenTypes::Hashtag:
+                current_item->preprocess;
+                break;
+            case TokenTypes::Identifier:
+                if (current_item->preprocess.type.empty()) {
+                    current_item->preprocess.type = t.lexem;
+                } else {
+                    current_item->preprocess.args->append(t.lexem);
+                }
         }
     }
 }
