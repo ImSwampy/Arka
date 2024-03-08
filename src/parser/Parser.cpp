@@ -8,6 +8,7 @@ std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector
     std::vector<std::vector<std::vector<Token>>> program;
     std::vector<std::vector<Token>> scope;
     std::vector<Token> current_token_list;
+    std::vector<Token> last_tok;
     short int curly_braces_ratio = 0;
     for (size_t pos = 0; pos < tok.size(); pos++) {
         Token curr = tok.at(pos);
@@ -26,6 +27,7 @@ std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector
             break;
 
         case TokenTypes::L_Bracket:
+            if ()
             curly_braces_ratio++;
             break;
 
