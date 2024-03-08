@@ -24,9 +24,6 @@ public:
 
 
 private:
-
-    Item item;
-    Token current_token;
     AST tree;
 };
 /*
