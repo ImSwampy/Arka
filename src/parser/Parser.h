@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <variant>
+#include <iostream>
 #include <list>
 #include <utility>
 
@@ -15,7 +16,7 @@ public:
 
     void parse(std::vector<Token> &tokens); //idk for now
 
-    void identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
+    std::vector<std::vector<std::vector<Token>>> identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
 
     void merge_token(std::vector<Token> tok); // detect what the vector is about (var, func...)
 
@@ -28,7 +29,7 @@ private:
     Token current_token;
     AST tree;
 };
-
+/*
 struct Type {
 
     struct Program {
@@ -64,11 +65,7 @@ struct Type {
         std::string args[];
     };
 };
-
-struct TotalType {
-    Type::Preprocess preprocess;
-}
-
+*/
 
 
 #endif //ARKA_PARSER_H
