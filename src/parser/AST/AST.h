@@ -8,7 +8,6 @@
 class AST {
 public:
     size_t tok_size;
-    Token *tokens = new Token[tok_size];
 
 
     void consume_token(Token tok[]) {
