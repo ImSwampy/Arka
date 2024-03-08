@@ -7,4 +7,4 @@ var sex<char> = 'M';
 /*yes my g*/
 //yes my g
 
-// Console.print("Hello, my name is ${name}, I'm ${age} years old and my sex is ${sex}");
+Console.print("Hello, my name is ${name}, I'm ${age} years old and my sex is ${sex}");
