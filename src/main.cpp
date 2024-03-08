@@ -20,11 +20,6 @@ int main(int argc, char *argv[]) {
     res = read_lines_tokenize(FILE, tokenizer);
     std::vector<std::vector<std::vector<Token>>> res2 = parser.identify_tokens(res);
 
-    for (Token n : res) {
-        std::cout << "\t\t[" << n.token_type << "; " << n.lexem << "]" << std::endl;
-    }
-
-    
     for (std::vector<std::vector<Token>> toks : res2) {
         std::cout << "{" << std::endl;
         for (std::vector<Token> tok : toks) {
