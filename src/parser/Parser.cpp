@@ -31,7 +31,7 @@ std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector
         case TokenTypes::R_Bracket:
             curly_braces_ratio--;
             scope.push_back(current_token_list);
-            scope.clear();
+            current_token_list.clear();
             break;
 
         default:
