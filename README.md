@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Project : Arka
 
 - ## Description
@@ -48,7 +47,7 @@ As advantages, it benefits from the low level languages static typing, and hardw
 
 - ## Informations
   - The Project is just at its beginning. There may be some errors related to compatibility errors or just code errors.
-=======
+
 # Project : Arka
 
 - ## Description
@@ -98,4 +97,3 @@ As advantages, it benefits from the low level languages static typing, and hardw
 
 - ## Informations
   - The Project is just at its beginning. There may be some errors related to compatibility errors or just code errors.
->>>>>>> 002ad4018a6b2dcb3799b93f9be7a730b6925c37
