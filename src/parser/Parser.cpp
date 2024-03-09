@@ -10,16 +10,18 @@ std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector
     std::vector<Token> current_token_list;
     short int curly_braces_ratio = 0;
     for (size_t pos = 0; pos < tok.size(); pos++) {
-        std::cout << pos << ": " << tok.at(pos).lexem << std::endl;
         Token curr = tok.at(pos);
-
-
+        
+        if (curr.token_type != TokenTypes::R_Bracket && pos == tok.size()-1) {
+            program.push_back(scope);
+            break;
+        }
         switch (curr.token_type) {
         case TokenTypes::Semicol:
             if (!current_token_list.empty()) {
                 scope.push_back(current_token_list);
+                current_token_list.clear();
             }
-            current_token_list.clear();
             break;
 
         case TokenTypes::L_Bracket:
@@ -28,7 +30,7 @@ std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector
 
         case TokenTypes::R_Bracket:
             curly_braces_ratio--;
-            program.push_back(scope);
+            scope.push_back(current_token_list);
             scope.clear();
             break;
 
