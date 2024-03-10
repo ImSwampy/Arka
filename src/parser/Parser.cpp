@@ -41,7 +41,7 @@ Program Parser::identify_tokens(std::vector<Token> tok) {
                 break;
             }
         }
-    
+
     if (curly_braces_ratio != 0) {
         if (curly_braces_ratio > 0) {
             std::cerr << "missing curly braces : '}'" << std::endl;

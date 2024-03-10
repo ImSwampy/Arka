@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <variant>
+
 #include <iostream>
 #include <list>
 #include <utility>
@@ -90,6 +91,10 @@ struct Type {
     };
 };
 */
+
+struct TotalType {
+    Type::Preprocess preprocess;
+}
 
 
 
