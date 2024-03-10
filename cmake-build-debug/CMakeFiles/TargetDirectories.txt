@@ -1,3 +1,0 @@
-C:/Users/tijag/CLionProjects/Arka/cmake-build-debug/CMakeFiles/my_own_programming_language.dir
-C:/Users/tijag/CLionProjects/Arka/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tijag/CLionProjects/Arka/cmake-build-debug/CMakeFiles/rebuild_cache.dir
