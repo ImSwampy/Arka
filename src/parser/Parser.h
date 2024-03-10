@@ -3,15 +3,23 @@
 
 #include "AST/AST.h"
 #include "item/item.h"
+#include "parser_types/Preprocess/Preprocess.h"
+
 #include <vector>
 #include <variant>
+<<<<<<< HEAD
+#include <iostream>
+=======
+>>>>>>> 1bca1ad (switching to testing branch, bugs included)
+#include <list>
+#include <utility>
 
 class Parser {
 public:
 
     void parse(std::vector<Token> &tokens); //idk for now
 
-    void identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
+    std::vector<std::vector<std::vector<Token>>> identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
 
     void merge_token(std::vector<Token> tok); // detect what the vector is about (var, func...)
 
@@ -19,49 +27,53 @@ public:
 
 
 private:
-
-    Item item;
-    Token current_token;
     AST tree;
 };
-
+/*
 struct Type {
 
-    enum Program {
-        name,
-        start,
-        end
+    struct Program {
+        std::string name;
+        uint start;
+        uint end;
     };
 
-    enum Body {
+    struct Body {
 
     };
 
     struct Expression {
-        std::string type,
-        ,
-        start,
-        end
+        std::string type;
+        std::string identifier;
+        uint start;
+        uint end;
     };
 
     struct Function {
-        name,
-        return_type,
-        parameters,
-        value
+        std::string name;
+        std::string return_type;
+        int parameters_num;
+        std::list<Type::Expression> parameters;
     };
 
     struct Classes {
-        name,
-        value
+        std::string name;
     };
 
-    struct Preprocess {
+    typedef struct Preprocess {
         std::string type;
         std::string args[];
     };
 };
+<<<<<<< HEAD
+*/
+=======
 
+struct TotalType {
+    Type::Preprocess preprocess;
+}
+
+>>>>>>> 1bca1ad (switching to testing branch, bugs included)
 
 
 #endif //ARKA_PARSER_H

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <tokenizer/Tokenizer.h>
 #include <fstream>
-#include <utils/ReadFile.h>
+#include "utils/ReadFile.h"
+#include "parser/Parser.h"
 
 
 int main(int argc, char *argv[]) {
@@ -14,10 +15,22 @@ int main(int argc, char *argv[]) {
     std::vector<Token> res;
 
     Tokenizer tokenizer;
-    res = read_lines_tokenize(FILE, tokenizer);
+    Parser parser;
 
-    for (const Token t : res) {
-            std::cout << "[" << TokenTypeNames.at(t.token_type) << "; \"" << t.lexem << "\"]" << "\n";
+    res = read_lines_tokenize(FILE, tokenizer);
+    std::vector<std::vector<std::vector<Token>>> res2 = parser.identify_tokens(res);
+
+    for (std::vector<std::vector<Token>> toks : res2) {
+        std::cout << "{" << std::endl;
+        for (std::vector<Token> tok : toks) {
+            std::cout << "\t{" << std::endl;
+            for (Token t : tok) {
+                std::cout << "\t\t[" << t.token_type << "; " << t.lexem << "]" << std::endl;
+            }
+            std::cout << "\t}" << std::endl;
+        }
+        std::cout << "}" << std::endl;
     }
+
     return 0;
 }
