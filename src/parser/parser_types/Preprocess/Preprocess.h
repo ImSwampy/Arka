@@ -5,6 +5,15 @@
 
 class Preprocess {
 public:
+<<<<<<< HEAD
+=======
+    Preprocess(Type::Preprocess type) : m_type(type){};
+    Type::Preprocess m_type;
+    
+    std::string type = m_type.type;
+    int args_size = m_type.args->size();
+    std::string *args = new std::string[args_size];
+>>>>>>> 1bca1ad (switching to testing branch, bugs included)
     
 private:
 

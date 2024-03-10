@@ -4,6 +4,7 @@ void Parser::parse(std::vector<Token> &tokens) {
 
 }
 
+<<<<<<< HEAD
 std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector<Token> tok) {
     std::vector<std::vector<std::vector<Token>>> program;
     std::vector<std::vector<Token>> scope;
@@ -35,6 +36,22 @@ std::vector<std::vector<std::vector<Token>>> Parser::identify_tokens(std::vector
         default:
             current_token_list.push_back(curr);
             break;
+=======
+void Parser::identify_tokens(std::vector<Token> tok) {
+    TotalType *current_item = new TotalType{};
+    Type yes;
+    for (Token t : tok) {
+        switch (t.token_type) {
+            case TokenTypes::Hashtag:
+                current_item->preprocess;
+                break;
+            case TokenTypes::Identifier:
+                if (current_item->preprocess.type.empty()) {
+                    current_item->preprocess.type = t.lexem;
+                } else {
+                    current_item->preprocess.args->append(t.lexem);
+                }
+>>>>>>> 1bca1ad (switching to testing branch, bugs included)
         }
     }
     
