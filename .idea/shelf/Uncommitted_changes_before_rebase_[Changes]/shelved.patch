@@ -1,0 +1,16 @@
+Index: CMakeLists.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>cmake_minimum_required(VERSION 3.27)\r\nproject(my_own_programming_language)\r\n\r\nset(\r\n    CMAKE_CXX_STANDARD 23\r\n    EXECUTABLE_OUTPUT_PATH /build\r\n)\r\n\r\ninclude_directories(src)\r\n\r\nadd_executable(my_own_programming_language\r\n    src/Types.h \r\n    src/tokenizer/Tokenizer.cpp \r\n    src/tokenizer/Tokenizer.h \r\n    src/main.cpp\r\n    src/utils/ReadFile.cpp\r\n    src/utils/ReadFile.h\r\n    src/parser/Parser.cpp\r\n    src/parser/Parser.h\r\n    src/parser/AST/AST.cpp\r\n    src/parser/AST/AST.h\r\n    src/parser/parser_types/Body/Body.h\r\n    src/parser/parser_types/Body/Body.cpp\r\n    src/parser/parser_types/Class/Class.h\r\n    src/parser/parser_types/Class/Class.cpp\r\n    src/parser/parser_types/Expression/Expression.h\r\n    src/parser/parser_types/Expression/Expression.cpp\r\n    src/parser/parser_types/Function/Function.h\r\n    src/parser/parser_types/Function/Function.cpp\r\n    src/parser/parser_types/Preprocess/Preprocess.h\r\n    src/parser/parser_types/Preprocess/Preprocess.cpp\r\n    src/parser/parser_types/Program/Program.h\r\n    src/parser/parser_types/Program/Program.cpp\r\n)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt	(revision 7e1d107fb24aff4d8ff222cf7339471a71d90861)
++++ b/CMakeLists.txt	(date 1709921585232)
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 3.27)
++cmake_minimum_required(VERSION 3.25)
+ project(my_own_programming_language)
+ 
+ set(
