@@ -23,11 +23,12 @@ private:
 
 class Scope {
 public:
-    void add_in_scope(Action action);
+    void add_scope_in_scope(Scope scope);
+    void add_action_in_scope(Action action);
     void clear_scope();
-    std::vector<Action> get_scope_content() const;
+    std::vector<std::variant<Action, Scope>> get_scope_content() const;
 private:
-    std::vector<Action> scope;
+    std::vector<std::variant<Action, Scope>> scope;
 };
 
 class Program {
@@ -91,11 +92,6 @@ struct Type {
     };
 };
 */
-
-struct TotalType {
-    Type::Preprocess preprocess;
-}
-
 
 
 

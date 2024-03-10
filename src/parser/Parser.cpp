@@ -28,6 +28,7 @@ Program Parser::identify_tokens(std::vector<Token> tok) {
 
             case TokenTypes::L_Bracket:
                 curly_braces_ratio++;
+                action.add_in_action(curr);
                 break;
 
             case TokenTypes::R_Bracket:
@@ -63,11 +64,11 @@ void Parser::consume_token(Token tok) {
 
 }
 
-void Scope::add_in_scope(Action action) {
-    scope.push_back(action);
+void Scope::add_in_scope(std::variant<Action, Scope> obj) {
+    scope.push_back(obj);
 }
 
-std::vector<Action> Scope::get_scope_content() const {
+std::vector<std::variant<Action, Scope>> Scope::get_scope_content() const {
     return scope;
 }
 
