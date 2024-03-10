@@ -18,13 +18,13 @@ int main(int argc, char *argv[]) {
     Parser parser;
 
     res = read_lines_tokenize(FILE, tokenizer);
-    std::vector<std::vector<std::vector<Token>>> res2 = parser.identify_tokens(res);
+    Program res2 = parser.identify_tokens(res);
 
-    for (std::vector<std::vector<Token>> toks : res2) {
+    for (Scope scope : res2.get_program_content()) {
         std::cout << "{" << std::endl;
-        for (std::vector<Token> tok : toks) {
+        for (Action scope : scope.get_scope_content()) {
             std::cout << "\t{" << std::endl;
-            for (Token t : tok) {
+            for (Token t : scope.get_action_content()) {
                 std::cout << "\t\t[" << t.token_type << "; " << t.lexem << "]" << std::endl;
             }
             std::cout << "\t}" << std::endl;

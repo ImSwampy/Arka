@@ -1,0 +1,17 @@
+# ninja log v5
+26	170	7317775615846364	CMakeFiles/my_own_programming_language.dir/src/parser/AST/AST.cpp.obj	d18b804a0e9e100f
+45	257	7317775616506959	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Class/Class.cpp.obj	1e53d9137bdc798b
+32	262	7317775616937355	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Expression/Expression.cpp.obj	dbe9041a7c566583
+38	272	7317775617027437	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Body/Body.cpp.obj	65b6c2d196da0ca1
+62	275	7317775617067474	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Function/Function.cpp.obj	bdc9f57c5d51ea04
+172	311	7317775617467837	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Program/Program.cpp.obj	28cd29e5556a1146
+57	1112	7317775625480784	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Preprocess/Preprocess.cpp.obj	58de58659a595d8d
+20	1263	7317775626982375	CMakeFiles/my_own_programming_language.dir/src/utils/ReadFile.cpp.obj	f36b886a0873d96d
+2	1363	7317775627959061	CMakeFiles/my_own_programming_language.dir/src/main.cpp.obj	6073f91813a15acf
+15	1366	7317775627959061	CMakeFiles/my_own_programming_language.dir/src/parser/Parser.cpp.obj	3c3e66bc7ca1ff36
+9	1428	7317775628610333	CMakeFiles/my_own_programming_language.dir/src/tokenizer/Tokenizer.cpp.obj	92dbb9b9ca86f6aa
+1428	1671	7317775631040958	my_own_programming_language.exe	27b5bb60344b826f
+17	839	7317907163287376	CMakeFiles/my_own_programming_language.dir/src/parser/parser_types/Preprocess/Preprocess.cpp.obj	58de58659a595d8d
+5	1007	7317907164958902	CMakeFiles/my_own_programming_language.dir/src/main.cpp.obj	6073f91813a15acf
+11	1047	7317907165359254	CMakeFiles/my_own_programming_language.dir/src/parser/Parser.cpp.obj	3c3e66bc7ca1ff36
+1047	1308	7317907167641332	my_own_programming_language.exe	27b5bb60344b826f

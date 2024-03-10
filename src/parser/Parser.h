@@ -11,12 +11,39 @@
 #include <list>
 #include <utility>
 
+class Action {
+public:
+    void add_in_action(Token tok);
+    void clear_action();
+    std::vector<Token> get_action_content() const;
+private:
+    std::vector<Token> action;
+};
+
+class Scope {
+public:
+    void add_in_scope(Action action);
+    void clear_scope();
+    std::vector<Action> get_scope_content() const;
+private:
+    std::vector<Action> scope;
+};
+
+class Program {
+public:
+    void add_in_program(Scope scope);
+    void clear_program();
+    std::vector<Scope> get_program_content() const;
+private:
+    std::vector<Scope> program;
+};
+
 class Parser {
 public:
 
     void parse(std::vector<Token> &tokens); //idk for now
 
-    std::vector<std::vector<std::vector<Token>>> identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";" 
+    Program identify_tokens(std::vector<Token> tok); // 1 vector<vector<Token>> = a scope, split vector<Token> with ";"
 
     void merge_token(std::vector<Token> tok); // detect what the vector is about (var, func...)
 
@@ -63,6 +90,9 @@ struct Type {
     };
 };
 */
+
+
+
 
 
 #endif //ARKA_PARSER_H
