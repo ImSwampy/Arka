@@ -7,10 +7,8 @@
 
 #include <vector>
 #include <variant>
-<<<<<<< HEAD
+
 #include <iostream>
-=======
->>>>>>> 1bca1ad (switching to testing branch, bugs included)
 #include <list>
 #include <utility>
 
@@ -65,15 +63,11 @@ struct Type {
         std::string args[];
     };
 };
-<<<<<<< HEAD
 */
-=======
 
 struct TotalType {
     Type::Preprocess preprocess;
 }
-
->>>>>>> 1bca1ad (switching to testing branch, bugs included)
 
 
 #endif //ARKA_PARSER_H
