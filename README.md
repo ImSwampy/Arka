@@ -22,13 +22,13 @@ As advantages, it benefits from the low level languages static typing, and hardw
         - Make compiling and interpreting easier
         - Debugger
         - More building tools
-    - **Build.Arka**
-        - Project manager tool
-        - Multiple files management
+    - **.arkonfig**
+        - File based project management. 
+        - Imports, parameters and configuration settings 
         - Custom commands, run and build configurations
     - **Osark**
         - Lightweight OS, built from scratch that will run on the side of the main OS
-        - Linux Based Kernel
+        - Linux Based Kernel?
         - Platform independent
         - Share resources with the main OS
 - ## Details
