@@ -1,13 +1,14 @@
 # Project : Arka
 
-- ## Description
+## Description
+
 This project have for purpose to be low level, fast and versatile. Introducing new features such as CoreLaunch: similar to docker, the program will be compiled and start on a custom OS, with the needed files and requirements. Alternate Testing: an interpreter to debug the code faster and easier, and the compiler will be used to deployment only **However, some errors might happen only when built.**
 
 We also wanted to make this programming language easy to learn, with some advanced concepts such as pointers, memory write & read, websocket, threads and more.
 
 As advantages, it benefits from the low level languages static typing, and hardware management.
 
-- ## Goals
+## Goals
     - **Create the compiler**
         - Tokenizer
         - Parser
