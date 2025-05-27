@@ -18,17 +18,17 @@ public:
     void clear_action();
     std::vector<Token> get_action_content() const;
 private:
-    std::vector<Token> action;
+    std::vector<Token> m_Action;
 };
 
 class Scope {
 public:
-    void add_scope_in_scope(Scope scope);
-    void add_action_in_scope(Action action);
+    void nest_scope(Scope &scope);
+    void add_action_in_scope(Action &action);
     void clear_scope();
-    std::vector<std::variant<Action, Scope>> get_scope_content() const;
+    std::vector<Action> get_scope_content() const;
 private:
-    std::vector<std::variant<Action, Scope>> scope;
+    std::vector<Action> m_Scope;
 };
 
 class Program {
@@ -37,7 +37,7 @@ public:
     void clear_program();
     std::vector<Scope> get_program_content() const;
 private:
-    std::vector<Scope> program;
+    std::vector<Scope> m_Program;
 };
 
 class Parser {

@@ -21,7 +21,7 @@ Program Parser::identify_tokens(std::vector<Token> tok) {
         switch (curr.token_type) {
             case TokenTypes::Semicol:
                 if (!action.get_action_content().empty()) {
-                    scope.add_in_scope(action);
+                    scope.add_action_in_scope(action);
                     action.clear_action();
                 }
                 break;
@@ -33,7 +33,7 @@ Program Parser::identify_tokens(std::vector<Token> tok) {
 
             case TokenTypes::R_Bracket:
                 curly_braces_ratio--;
-                scope.add_in_scope(action);
+                scope.add_action_in_scope(action);
                 action.clear_action();
                 break;
 
@@ -64,38 +64,42 @@ void Parser::consume_token(Token tok) {
 
 }
 
-void Scope::add_in_scope(std::variant<Action, Scope> obj) {
-    scope.push_back(obj);
+void Scope::nest_scope(Scope &scope) {
+    //m_Scope.push_back(scope);
 }
 
-std::vector<std::variant<Action, Scope>> Scope::get_scope_content() const {
-    return scope;
+void Scope::add_action_in_scope(Action &action) {
+    //m_Scope.push_back(action);
+}
+
+std::vector<Action> Scope::get_scope_content() const {
+    return m_Scope;
 }
 
 void Scope::clear_scope() {
-    scope.clear();
+    m_Scope.clear();
 }
 
 void Program::add_in_program(Scope scope) {
-    program.push_back(scope);
+    m_Program.push_back(scope);
 }
 
 std::vector<Scope> Program::get_program_content() const {
-    return program;
+    return m_Program;
 }
 
 void Program::clear_program() {
-    program.clear();
+    m_Program.clear();
 }
 
 void Action::add_in_action(Token tok) {
-    action.push_back(tok);
+    m_Action.push_back(tok);
 }
 
 std::vector<Token> Action::get_action_content() const {
-    return action;
+    return m_Action;
 }
 
 void Action::clear_action() {
-    action.clear();
+    m_Action.clear();
 }

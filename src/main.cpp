@@ -12,20 +12,21 @@ int main(int argc, char *argv[]) {
     }
 
     std::fstream FILE = std::fstream(argv[1], std::ios::in);
-    std::vector<Token> res;
 
     Tokenizer tokenizer;
     Parser parser;
 
-    res = read_lines_tokenize(FILE, tokenizer);
+    std::vector<Token> res = read_lines_tokenize(FILE, tokenizer);
     Program res2 = parser.identify_tokens(res);
 
-    for (Scope scope : res2.get_program_content()) {
+    for (Scope &scope : res2.get_program_content()) {
         std::cout << "{" << std::endl;
-        for (Action scope : scope.get_scope_content()) {
+        for (auto _scope : scope.get_scope_content()) {
             std::cout << "\t{" << std::endl;
-            for (Token t : scope.get_action_content()) {
-                std::cout << "\t\t[" << t.token_type << "; " << t.lexem << "]" << std::endl;
+            if (typeid(_scope) == typeid(Scope))
+                for (Token t: _scope.get_action_content()) {
+                    std::cout << "\t\t[" << t.token_type << "; " << t.lexem << "]" << std::endl;
+                } {
             }
             std::cout << "\t}" << std::endl;
         }
